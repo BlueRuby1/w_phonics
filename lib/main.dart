@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:yoru_phonics/pages/home_page.dart';
+import 'package:yoru_phonics/pages/onboarding_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'W Phonics',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.amberAccent),
-        primaryColor: Colors.amberAccent,
+        primaryColor: Colors.amberAccent.shade400,
         textTheme: TextTheme(
           headlineMedium: TextStyle(color: Colors.white),
           headlineSmall: TextStyle(color: Colors.white),
