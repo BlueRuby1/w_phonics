@@ -1,0 +1,40 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:yoru_phonics/pages/home_page.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'W Phonics',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.amberAccent),
+        primaryColor: Colors.amberAccent,
+        textTheme: TextTheme(
+          headlineMedium: TextStyle(color: Colors.white),
+          headlineSmall: TextStyle(color: Colors.white),
+          bodyMedium: TextStyle(color: Colors.white),
+          bodySmall: TextStyle(color: Colors.white),
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(borderRadius: BorderRadiusGeometry.circular(8)),
+            fixedSize: Size.fromHeight(50),
+            textStyle: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 16,
+            )
+          ),
+        ),
+      ),
+      debugShowCheckedModeBanner: false,
+      home: const HomePage(),
+    );
+  }
+}
